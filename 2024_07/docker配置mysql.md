@@ -36,6 +36,18 @@ docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=123456 -v D:\iso\mysql:/var/li
 
 
 
+### 端口被占用的报错.
+
+```cmd
+docker: Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:3306 -> 0.0.0.0:0: listen tcp 0.0.0.0:3306: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+```
+**解法:重启winnat**   
+先管理员运行cmd,然后:   
+```windows
+net stop winnat  // 停止WinNAT服务
+net start winnat // 重新启动WinNAT服务
+```
+
 ## 创建MYSQL DATABSE
 
 如果2中设置了密码则第一步启动的时候也需要密码。
