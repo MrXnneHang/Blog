@@ -1,0 +1,96 @@
+## 番茄钟设计
+
+
+
+关于我一边用着自己的番茄钟并且一边写着自己的番茄钟的这件事。
+
+番茄钟：每隔二十五分钟（或者其他时间）就给自己的一个short break。
+
+更多科普：[从没有人告诉过你的【番茄钟的真相】良药苦口·第2期](https://www.bilibili.com/video/BV19x411d7UB/?spm_id_from=333.337.search-card.all.click&vd_source=d7601f0fc447d708fff71aa75186ea10)
+
+* 在目前我越来越难以让自己专注。感到自己的一天时间似乎都没有什么空余的时候，我会选择用番茄钟。让自己试图专注15分钟从而进入状态。
+
+* 并且在暑假漫无目的，时间大把挥霍的时候，我也选择用番茄钟来平衡自己的娱乐和学习。
+
+* 另外重要的是把我从“一个bug卡一天”的状态中救出来，一杯水，一根烟，一个bug调一天不是我追求的。如果一个bug调不好，可能应该考虑换实现了。
+
+  以及是不是自己太过于陷入误区，是不是应该多考虑：
+
+  [《最后期限》后 - 设计，让我有如“神”助 | 管理，让我化险为夷](http://xnnehang.top/blog/57)
+
+---
+
+但这里，我要提的是，我要写的番茄钟软件。
+
+为什么要自己写，我steam上面买了不少和番茄钟相似的软件。
+
+并且github上面开源的也不少。
+
+但是[正常的番茄钟太温柔了对我](https://github.com/MrXnneHang/Yasumi-Clock/blob/master/README.md)
+
+
+
+---
+
+呃，花了一下午UI和资源后，发现限制我的不是我的代码而是我的美术。wtf，明天用SD画一画。
+
+
+
+## V1.0 - released:
+
+基础功能添加:
+
+- 预加载动画窗口
+- 计时
+- 重置
+- 增加时长
+- 缩减时长
+
+
+
+### 基础功能添加:
+
+- 预加载动画窗口
+- 计时
+- 重置
+- 增加时长
+- 缩减时长
+
+## V1.1 - 更新介绍:
+
+### 添加功能:
+
+- 切换状态时在两种动画间切换（休息和工作）。
+
+### bug-fix:
+
+- 倒计时结束时窗口置顶
+- Loading Window置顶
+
+
+
+
+
+## 效果预览:
+
+休息动画
+
+![休息动画](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2910644873.webp)
+
+工作动画：
+
+![工作动画](https://image.baidu.com/search/down?url=https://img9.doubanio.com/view/photo/l/public/p2910644874.webp)
+
+麻衣让你去休息=-=:
+
+
+![麻衣让你去休息了](https://image.baidu.com/search/down?url=https://img9.doubanio.com/view/photo/l/public/p2910644875.webp)
+
+
+
+## 想要继续做的更新：
+
+* 给番茄钟一个tag功能，代表每次做的是什么类型的，比如看书，写代码。
+
+- 历史记录
+- 饼状图分析，折线图分析
