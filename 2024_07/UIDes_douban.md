@@ -28,7 +28,7 @@ chapter-1-tags
 
 ![image-20240719093357102](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2910806102.webp)
 
-## 进入界面
+## 模块分布的参考(b5对战平台)
 
 ![image-20240719093651656](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2910806103.webp)
 
@@ -50,7 +50,7 @@ chapter-1-tags
 
 以及还需要做一个log out的选项，能够回退到主界面进行再次选择。
 
-如何Hidden，如何做动画。
+如何Hidden，如何做动态效果。
 
 ## 2.聊天式。【★★★★★】
 
