@@ -80,6 +80,8 @@ output:
 
 [https://github.com/Caibospoem/vtuber](https://github.com/Caibospoem/vtuber)
 
+![image-20240804125708695](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2911403327.webp)
+
 first commit? 第一次更新?README写了什么？
 
 文档？流程图？requirements?
@@ -98,9 +100,9 @@ OSERROR: No Such File: ../res/shape_predictor_68_face_landmarks.dat
 
 在三次课设的时候我也跟他起过类似的大大小小的争执。总体大概像这样:  
 
-![剧情](https://cdn.jsdelivr.net/gh/MrXnneHang/Blog_img/BlogHosting/img/24/08/202408041054819.jpeg)
+![剧情](https://image.baidu.com/search/down?url=https://img9.doubanio.com/view/photo/l/public/p2911403324.webp)
 
-![Snipaste_2024-08-04_10-14-52](https://cdn.jsdelivr.net/gh/MrXnneHang/Blog_img/BlogHosting/img/24/08/202408041054045.jpeg)
+![Snipaste_2024-08-04_10-14-52](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2911403323.webp)
 
 直到现在，我彻底放弃扶起来一个室友和我组个组织写代码的想法。
 
@@ -109,9 +111,9 @@ OSERROR: No Such File: ../res/shape_predictor_68_face_landmarks.dat
 
 
 但我也碰到一些真的非常有意思的人:
-![a1](https://cdn.jsdelivr.net/gh/MrXnneHang/Blog_img/BlogHosting/img/24/08/202408041148554.jpeg)
+![a1](https://image.baidu.com/search/down?url=https://img9.doubanio.com/view/photo/l/public/p2911403325.webp)
 
-![Snipaste_2024-08-04_11-48-21](https://cdn.jsdelivr.net/gh/MrXnneHang/Blog_img/BlogHosting/img/24/08/202408041149247.jpeg)
+![Snipaste_2024-08-04_11-48-21](https://image.baidu.com/search/down?url=https://img9.doubanio.com/view/photo/l/public/p2911403326.webp)
 
 而且，最开始时，两个人都不会写代码。第一个会一些，第二个是完全不会。
 
