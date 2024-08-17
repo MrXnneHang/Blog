@@ -12,14 +12,21 @@
   File "src/arraydatatype.pyx", line 80, in OpenGL_accelerate.arraydatatype.HandlerRegistry.c_handler_by_plugin_name
   File "D:\miniconda\envs\vtuber\lib\site-packages\OpenGL\plugins.py", line 18, in load
     return importByName( self.import_path )
+  File "D:\miniconda\envs\vtuber\lib\site-packages\OpenGL\plugins.py", line 45, in importByName
     module = __import__( ".".join(moduleName), {}, {}, moduleName)
   File "D:\miniconda\envs\vtuber\lib\site-packages\OpenGL\arrays\numpymodule.py", line 28, in <module>
     from OpenGL_accelerate.numpy_formathandler import NumpyHandler
   File "src/numpy_formathandler.pyx", line 1, in init OpenGL_accelerate.numpy_formathandler
-ValueError: ('numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject', 1, <OpenGL.platform.baseplatform.glGenTextures object at 0x0000019D0DC4EC80>)
+ValueError: ('numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject', 1, <OpenGL.platform.baseplatform.glGenTextures object at 0x000001ECC04F2D40>)
 ```
 
-环境 Windows:
+```cmd
+ValueError: ('numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject', 1, <OpenGL.platform.baseplatform.glGenTextures object at 0x0000018644ED2DC0>)
+```
+
+
+
+## 环境:
 
 ```cmd
 Python 3.10.14 | packaged by conda-forge | (main, Mar 20 2024, 12:40:08) [MSC v.1938 64 bit (AMD64)] on win32
@@ -27,21 +34,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import numpy
 >>> numpy.__version__
 '2.0.1'
->>> import OpenGL 
+>>> import OpenGL
 >>> OpenGL.__version__
 '3.1.7'
+>>>
 ```
 
-## Solve:
 
-**对numpy进行了降级，降到1.25.2后正常。**
 
-如果你不清楚自己Python版本的numpy可以降级到多少。
+## 解决:
 
-可以pip install oldest-supported-numpy
+```python
+pip install oldest-supported-numpy
+```
 
-然后注意pip 是否有error说其他库要求numpy>=多少。
-
-然后记得先pip uninstaller oldest-supported-numpy。因为你安装numpy时不会remove掉oldest，可能会造成一个环境有两个numpy。
-
-然后就先试一下pip要求的最低版本的numpy。如果没有报error就从oldest的版本开始尝试，一次跳一个大版本。
