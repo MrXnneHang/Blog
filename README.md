@@ -1,14 +1,43 @@
-## 策略:
+server {
+  listen 443;
+  server_name xnnehang.top;
+  ssl on;
 
-存放博客的markdown，markdown中的图片引用SMMS
-博客中的github图片在国内没有代理的情况下几乎加载不出来。  
+  ssl_certificate     xnnehang.top.pem;
+  ssl_certificate_key xnnehang.top.key;
 
-而对博客的引用我们采用豆瓣。  
+  ssl_session_timeout 30m;
+  ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  ssl_prefer_server_ciphers on;
 
-我们的思路是：  
+  location / {
+    proxy_pass http://127.0.0.1:8079/;
+  }
+}
 
-写markdown的时候自动上传到SMMS，然后我们push到github上来。  
 
-然后我自己再写一个读取markdown中的图片链接并且request到本地然后再upload到豆瓣相册再转义成url替换。  
 
-也就是说github存放我们的博客源文件，然后转义成微博图床上的url再放到我的博客上面。这样即使微博图床挂了我也可以从github的markdown里面重新构建。  
+
+
+sudo fuser -k 8079/tcp
+sudo fuser -k 8080/tcp
+sudo fuser -k 8090/tcp
+
+sudo systemctl restart nginx
+
+sudo docker stop redis
+sudo docker rm redis
+sudo docker run -p 6379:6379 --name redis -v /data/redis/redis.conf:/etc/redis/redis.conf -v /data/redis/data:/data -d redis:5.0.5 redis-server /etc/redis/redis.conf --appendonly yes
+sudo service mysql start
+source /root/.nvm/nvm.sh
+nvm use 14
+cd /www/wwwroot/xnnehang.top/blog-view
+nohup node server.js &
+
+cd ../blog-cms
+nohup node server.js &
+
+cd ../blog-api
+nohup java -jar target/blog-api-0.0.1.jar > /www/wwwroot/xnnehangblog.com/blog-api/output.log 2>&1 &
+
