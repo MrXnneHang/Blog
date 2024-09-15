@@ -1,0 +1,28 @@
+
+
+## 我们的前后端接通起来了:
+
+![image-20240912091427737](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2912929182.webp)
+
+![image-20240912091447396](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2912929183.webp)
+
+## And 加入之前的白嫖有道。
+
+让Gpt写一个简单的消息窗口，然后把内容替换成之前的[白嫖有道](http://xnnehang.top/blog/118)
+
+![image-20240912125702865](https://image.baidu.com/search/down?url=https://img1.doubanio.com/view/photo/l/public/p2912929180.webp)
+
+我们就可以简单的得到单词的释义了。
+
+中途花了大量时间尝试app上那种每个单词split的功能，发现不是一般的困难，因为渲染的时候会把换行吞掉，或者让空格间距不正常。
+
+但，保持最简。目前应该是最简。
+
+
+
+## 之后的大方向：
+
+- [ ] Deeplx的本地运行和翻译接入。 | python
+- [ ] 单词存储和句子存储，sqlite。save words,phrases,sentences | python
+- [ ] user登录和书架功能。可以的话，设计个封面。再不济，引入txt的图标 | vue
+
