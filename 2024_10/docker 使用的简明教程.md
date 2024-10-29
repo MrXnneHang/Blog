@@ -100,4 +100,4 @@ docker run -it new_image_name:tag
 
 但是，注意，持久化映射(`docker run --name local_paddle -it -v $PWD:/paddle`)的数据不会被打包，只会打包系统环境:<br>
 
-如果需要映射文件也被打包，则还需要手动复制挂在目录到容器内部，退出容器，然后再docker commit.(具体问一下gpt,等我下次碰到了再给出一个示例。)<br>
+如果需要映射文件也被打包，则还需要手动复制挂在目录到容器内部，退出容器(不要销毁！！)，然后再docker commit.(具体问一下gpt,等我下次碰到了再给出一个示例。)<br>
