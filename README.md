@@ -1,43 +1,7 @@
-server {
-  listen 443;
-  server_name xnnehang.top;
-  ssl on;
+## 这里是博客的备份
 
-  ssl_certificate     xnnehang.top.pem;
-  ssl_certificate_key xnnehang.top.key;
+图片的链接是用 picgo 的图床上传到 github 然后用 jsdelivr 加速的，至少可以保证离开了 github 也能看到图片。
 
-  ssl_session_timeout 30m;
-  ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
-  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-  ssl_prefer_server_ciphers on;
+对于境内 jsdelivr 加速不太好的情况，为把图片挂到了豆瓣的相册，然后爬取图片地址，再用一些防盗链来把图片挂到博客上。
 
-  location / {
-    proxy_pass http://127.0.0.1:8079/;
-  }
-}
-
-
-
-
-
-sudo fuser -k 8079/tcp
-sudo fuser -k 8080/tcp
-sudo fuser -k 8090/tcp
-
-sudo systemctl restart nginx
-
-sudo docker stop redis
-sudo docker rm redis
-sudo docker run -p 6379:6379 --name redis -v /data/redis/redis.conf:/etc/redis/redis.conf -v /data/redis/data:/data -d redis:5.0.5 redis-server /etc/redis/redis.conf --appendonly yes
-sudo service mysql start
-source /root/.nvm/nvm.sh
-nvm use 14
-cd /www/wwwroot/xnnehang.top/blog-view
-nohup node server.js &
-
-cd ../blog-cms
-nohup node server.js &
-
-cd ../blog-api
-nohup java -jar target/blog-api-0.0.1.jar > /www/wwwroot/xnnehangblog.com/blog-api/output.log 2>&1 &
-
+这是妥妥的白嫖，希望豆瓣大大能原谅我。
