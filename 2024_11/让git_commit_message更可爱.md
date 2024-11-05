@@ -43,6 +43,25 @@ git commit --amend
 
 你可以选择在这里修改你的 commit message,然后保存退出。当然你也可以直接在 commit -m 的时候一次性写完。<br>
 
+另外 commit message 是分成 header,body,footer 三部分。具体写法:<br>
+
+```yaml
+:memo: docs:copilot无法在vscode中工作 (这是commit -m 的内容,:memo:是Gitmoji,push后会自动渲染)
+
+这里是body的部分
+
+这里是footer的部分
+# 请为您的变更输入提交说明。以 '#' 开始的行将被忽略，而一个空的提交
+# 说明将会终止提交。
+# ...
+```
+
+三个部分一般以空行分开。最后在你 push 到 github 后，你可以点进 commit 去看你的 commit message 的详细信息。<br>
+
+[https://github.com/MrXnneHang/Blog/commit/17343e378c7e00dd971b5fd5209cb31faedb35f1](https://github.com/MrXnneHang/Blog/commit/17343e378c7e00dd971b5fd5209cb31faedb35f1)<br>
+
+所以平时写 header 应该尽量简短，详细信息可以放到 body 里。<br>
+
 ### 自定义短语:
 
 这个大大减少了我记忆和输入 Gitmoji 的时间。<br>
