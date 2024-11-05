@@ -1,5 +1,7 @@
 # 让 git commit message 更加可爱。
 
+![](https://fastly.jsdelivr.net/gh/MrXnneHang/blog_img/BlogHosting/img/24/11/202411051243421.jpeg)
+
 ## Refrence:
 
 - [打「『』」等特殊符号的的方法 | 「自定义短语」| 吵架神器?](https://xnnehang.top/blog/89)<br>
