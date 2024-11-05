@@ -93,6 +93,15 @@ LICENSE                RELEASE.md      tools/
 pip install -r python/requirements.txt
 ```
 
+> `IMPORTANT:`<br> > `注意！！！`<br>
+> docker 环境下有多个 python,你 python 一下看看默认使用哪个 python<br>
+> 我是默认使用 3.9,在最后 make -j 的时候，而我构建的是 310 的 paddle<br>
+> 就报错建议运行:pip install -r python/requirements.txt<br>
+> 但是反复运行都会缺一个 networkx。<br>
+> 然后我尝试指定了 pip3.10 install -r python/requirements.txt,就没再报错一次编译完成。<br>
+
+> 如果你编译的 whl 和你机器 python 是相同版本，那么放心使用 pip install -r python/requirements.txt,如果是不同版本，那么参照你的版本指定 pip.<br>
+
 ## 切换到 develop 分支：
 
 如果像文档里直接 `git checkout develop`,会导致后面找不到 develop tag 的 hash,但是 grep 是可以找出那个 hash 的。
