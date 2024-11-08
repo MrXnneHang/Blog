@@ -64,7 +64,7 @@
 
 我尝试 mention，但是尝试了半天也没搞懂像这种渲染的效果是怎么做出来的。
 
-![image-20241108133415924](https://fastly.jsdelivr.net/gh/MrXnneHang/blog_img/BlogHosting/img/24/11/202411081334795.png)
+![image-20241108133415924](https://image.baidu.com/search/down?url=https://img2.doubanio.com/view/photo/l/public/p2915099781.webp)
 
 然后好像有人帮我改了一下，我得到了它的源码：<br>
 
@@ -118,9 +118,9 @@ paddle.diable_static() 和 paddle.enable_static() .<br>
 
 而动态图灵活的计算可以自由选用是否要进行原地操作，直接修改原变量而不需要创建新变量，这样开销会小很多。<br>
 
-![alt text](https://fastly.jsdelivr.net/gh/MrXnneHang/blog_img/BlogHosting/img/24/11/202411081611572.png)
+![alt text](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2915099782.webp)
 
-![image-20241108161256211](https://fastly.jsdelivr.net/gh/MrXnneHang/blog_img/BlogHosting/img/24/11/202411081613447.png)
+![image-20241108161256211](https://image.baidu.com/search/down?url=https://img3.doubanio.com/view/photo/l/public/p2915099783.webp)
 
 这里我们用 CNN 和 RNN 的计算来说明这两种图的区别。<br>
 
@@ -201,7 +201,7 @@ class TestBitwiseInvertApi(unittest.TestCase):
 
 后面和 gpt 再进行了一阵子讨论，可以确定的是，不管写成 paddle.bitwise_not() 还是 Tensor.bitwise_not(),都是合法的，它们在动态图和静态图下也不会有什么区别。并且都测试的是同一个 kernel，**而且也只需要测一遍，不需要把每个别名都来一遍。**<br>
 
-![image-20241108165805733](https://fastly.jsdelivr.net/gh/MrXnneHang/blog_img/BlogHosting/img/24/11/202411081658327.png)
+![image-20241108165805733](https://image.baidu.com/search/down?url=https://img9.doubanio.com/view/photo/l/public/p2915099784.webp)
 
 ### Git Detached HEAD:
 
