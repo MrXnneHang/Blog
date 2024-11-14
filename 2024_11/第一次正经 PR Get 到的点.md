@@ -201,8 +201,6 @@ class TestBitwiseInvertApi(unittest.TestCase):
 
 后面和 gpt 再进行了一阵子讨论，可以确定的是，不管写成 paddle.bitwise_not() 还是 Tensor.bitwise_not(),都是合法的，它们在动态图和静态图下也不会有什么区别。并且都测试的是同一个 kernel，**而且也只需要测一遍，不需要把每个别名都来一遍。**<br>
 
-![image-20241108165805733](https://fastly.jsdelivr.net/gh/MrXnneHang/blog_img/BlogHosting/img/24/11/202411081658327.png)
-
 ### Git Detached HEAD:
 
 在试图切换到远程分支时，会出现`detached HEAD`的情况，它是个中间状态，就像只读的文件一样。你可以直接`git checkout -b new_branch_name`来复制一个副本，然后副本是可以修改的。（实际上它的存在方便了分支创建）但你对远程分支的所有修改均不会自动保存，commit 在切换回本地分支后会丢失。<br>
