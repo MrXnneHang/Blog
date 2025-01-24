@@ -8,10 +8,10 @@
 
 - [x]迁移我的梯子。
 - [x]找一个稍微舒服一点的输入法。
-- [ ]添加 ssh-key 到 github 写入权限账户
+- [x]添加 ssh-key 到 github 写入权限账户
 - [x]vscode 以及基本插件
 - [ ]typora 以及 picgo 联动
-- [ ]miniconda 安装和 cpu 版本最小 torch 包。
+- [x]miniconda 安装和 cpu 版本最小 torch 包。
 - [ ]docker 以及守护进程代理配置
 - [ ]paddle cpu 版本的编译。
 
@@ -86,15 +86,33 @@ I'm back.(太浪漫啦！)<br>
 
 ## 添加 ssh-key 到 github 写入权限账户
 
-我最初在还没添加ssh-key的时候，我克隆仓库用的是http_proxy。<br>
+我最初在还没添加 ssh-key 的时候，我克隆仓库用的是 http_proxy。<br>
 
-然后在尝试push的时候出现了这个:<br>
+然后在尝试 push 的时候出现了这个:<br>
 
 ```shell
 (base) xnne@xnne-PC:~/code/Blog$ git push origin master Username for 'https://github.com': MrXnneHang
-Password for 'https://MrXnneHang@github.com': 
+Password for 'https://MrXnneHang@github.com':
 ```
 
 以前也出现过一次这样的问题，但那个是因为仓库不存在或者说是私有的。<br>
 
-这次是因为https_proxy不走ssh协议。我目前是这么理解的，目前我正重新克隆并且打算push。<br>
+这次是因为 https_proxy 不走 ssh 协议。我目前是这么理解的，目前我正重新克隆并且打算 push。<br>
+
+ok 写入正常。<br>
+
+这里也说明了，直接的仓库读写访问一般是通过 ssh 访问的。<br>
+
+## typora 和 picgo 联动.
+
+说起来我 typora 的一个注册个数已经达到三个了，因为之前电脑崩了两次，现在估计得找官方重置一下。<br>
+
+所以这个会晚些。<br>
+
+## 关于 miniconda
+
+原来我好早以前就弄好了呀。<br>
+
+---
+
+docker 和 paddle 也放在明天弄扒，今天只是恢复状态，所以格外啰嗦。<br>
