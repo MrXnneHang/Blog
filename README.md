@@ -6,14 +6,14 @@
 
 一直以来觉得迁移起来太困难了所以操作系统崩了也懒得救。现在把需要做的事情列一下。
 
-- [x]迁移我的梯子。
-- [x]找一个稍微舒服一点的输入法。
-- [x]添加 ssh-key 到 github 写入权限账户
-- [x]vscode 以及基本插件
-- [ ]typora 以及 picgo 联动
-- [x]miniconda 安装和 cpu 版本最小 torch 包。
-- [ ]docker 以及守护进程代理配置
-- [ ]paddle cpu 版本的编译。
+- [x] 迁移我的梯子。
+- [x] 找一个稍微舒服一点的输入法。
+- [x] 添加 ssh-key 到 github 写入权限账户
+- [x] vscode 以及基本插件
+- [ ] typora 以及 picgo 联动
+- [x] miniconda 安装和 cpu 版本最小 torch 包。
+- [ ] docker 以及守护进程代理配置
+- [ ] paddle cpu 版本的编译。
 
 为啥只弄 cpu 版本的 paddle，因为我台式的 deepin 分配的空间相当小，另外我 windows 那边可以编译 gpu 版本的不过耗时过长，说起来也正是从我编译 gpu 版本的 paddle 开始我的一个 PR 积极性就逐渐下降了，二次编译半小时非常磨人。<br>
 
